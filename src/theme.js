@@ -18,7 +18,7 @@ export default extendTheme({
         solid: (props) => ({
           bg: "transparent",
           boxShadow: "none",
-          fontSize: "2xl",
+          fontSize: "xl",
           fontFamily: "primary",
           color: mode("secondary", "primary")(props),
           fontWeight: "bold",

@@ -7,6 +7,7 @@ import {
   Tooltip,
   useColorMode,
 } from "@chakra-ui/react";
+import { css } from "@emotion/react";
 import React from "react";
 import { BsFillCircleFill } from "react-icons/bs";
 
@@ -15,7 +16,14 @@ const index = () => {
     <Stack alignItems={"center"} h={"100vh"} justifyContent={"center"}>
       <Stack spacing={0} w={22} alignItems={"center"}>
         <Tooltip label="Intro" placement="right" variant={"solid"}>
-          <Button variant={"unstyled"}>
+          <Button
+            variant={"unstyled"}
+            css={css`
+            &:hover {
+               transform: scale(1.2);
+               color: orange
+              `}
+          >
             <Icon as={BsFillCircleFill} w={2} />
           </Button>
         </Tooltip>
@@ -26,7 +34,14 @@ const index = () => {
 
         <Tooltip label="Work" placement="right" variant={"solid"}>
           <a href="#works">
-            <Button variant={"unstyled"}>
+            <Button
+              variant={"unstyled"}
+              css={css`
+            &:hover {
+               transform: scale(1.2);
+               color: orange
+              `}
+            >
               <Icon as={BsFillCircleFill} w={2} />
             </Button>
           </a>
@@ -37,7 +52,14 @@ const index = () => {
         </Slider>
         <a href="#skills">
           <Tooltip label="Skills" placement="right" variant={"solid"}>
-            <Button variant={"unstyled"}>
+            <Button
+              variant={"unstyled"}
+              css={css`
+            &:hover {
+               transform: scale(1.2);
+               color: orange
+              `}
+            >
               <Icon as={BsFillCircleFill} w={2} />
             </Button>
           </Tooltip>
@@ -47,7 +69,14 @@ const index = () => {
         </Slider>
         <a href="#contact">
           <Tooltip label="Contact Me" placement="right" variant={"solid"}>
-            <Button variant={"unstyled"}>
+            <Button
+              variant={"unstyled"}
+              css={css`
+            &:hover {
+               transform: scale(1.2);
+               color: orange
+              `}
+            >
               <Icon as={BsFillCircleFill} w={2} />
             </Button>
           </Tooltip>

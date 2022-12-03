@@ -3,6 +3,7 @@ import avatarWhite from "../../assets/avatarWhite.png";
 import avatarBlackMode from "../../assets/avatarBlackMode.png";
 import vector6 from "../../assets/vector6.png";
 import vector4 from "../../assets/vector4.png";
+import { css } from "@emotion/react";
 
 function Avatar() {
   const { colorMode } = useColorMode();
@@ -31,6 +32,10 @@ function Avatar() {
         fontSize={"3xl"}
         w={"full"}
         textAlign={{ base: "center", md: "end" }}
+        css={css`
+            &:hover {
+               color: orange
+              `}
       >
         Front-End developer
       </Text>

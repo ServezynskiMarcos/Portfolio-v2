@@ -12,6 +12,7 @@ import {
 } from "@chakra-ui/react";
 import torsoBlack from "../../assets/torsoBlack.png";
 import torsoWhite from "../../assets/torsoWhite.png";
+import { css } from "@emotion/react";
 function Contact() {
   const [state, handleSubmit] = useForm("mpznqblo");
   const { colorMode } = useColorMode();
@@ -63,7 +64,14 @@ function Contact() {
               errors={state.errors}
             />
             <Stack alignItems={"center"} marginTop={{ base: 8, lg: 16 }}>
-              <Button type="submit" disabled={state.submitting}>
+              <Button
+                type="submit"
+                disabled={state.submitting}
+                css={css`
+            &:hover { 
+               color: orange
+              `}
+              >
                 Submit
               </Button>
             </Stack>
@@ -71,11 +79,7 @@ function Contact() {
           </form>
         </Stack>
       </Stack>
-      <Stack
-        position="absolute"
-        left={0}
-        bottom="-16"
-      >
+      <Stack position="absolute" left={0} bottom="-16">
         <Image
           src={colorMode === "dark" ? torsoBlack : torsoWhite}
           w={{ base: "250px", lg: "300px" }}
