@@ -25,10 +25,8 @@ import {
   SiTypescript,
 } from "react-icons/si";
 import { WiStars } from "react-icons/wi";
-import torsoBlack from "../../assets/torsoBlack.png";
-import torsoWhite from "../../assets/torsoWhite.png";
+
 const Skills = () => {
-  const { colorMode } = useColorMode();
   const logoColor = useColorModeValue("secondary", "primary");
   const tableColor = useColorModeValue("red", "teal");
   return (
@@ -125,12 +123,6 @@ const Skills = () => {
             </Table>
           </TableContainer>
         </Stack>
-      </Stack>
-      <Stack alignItems={{ base: "center", lg: "start" }}>
-        <Image
-          src={colorMode === "dark" ? torsoBlack : torsoWhite}
-          w={"300px"}
-        />
       </Stack>
     </Stack>
   );
