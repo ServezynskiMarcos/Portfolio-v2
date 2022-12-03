@@ -74,7 +74,7 @@ function Contact() {
       <Stack
         position="absolute"
         left={0}
-        top={{ base: "62vh", lg: "51vh", xl: "61vh" }}
+        bottom="-16"
       >
         <Image
           src={colorMode === "dark" ? torsoBlack : torsoWhite}
