@@ -17,6 +17,8 @@ function Contact() {
   const [state, handleSubmit] = useForm("mpznqblo");
   const { colorMode } = useColorMode();
   const bgColor = useColorModeValue("whiteAlpha.900", "gray.700");
+  const alertColor = useColorModeValue("secondary", "primary");
+  const textColor = useColorModeValue("white", "gray.900");
   return (
     <Stack
       id="contact"
@@ -75,7 +77,17 @@ function Contact() {
                 Submit
               </Button>
             </Stack>
-            {state.succeeded ? <Text>¡Thanks for your interest!</Text> : null}
+            {state.succeeded ? (
+              <Stack
+                textAlign={"center"}
+                bg={alertColor}
+                p={2}
+                borderRadius={8}
+                marginTop={4}
+              >
+                <Text fontFamily={"primary"} fontSize={'lg'} color={textColor} fontWeight={"bold"}>¡Thanks for your interest!</Text>
+              </Stack>
+            ) : null}
           </form>
         </Stack>
       </Stack>
