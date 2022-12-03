@@ -18,22 +18,20 @@ const Footer = () => {
   const textColor = useColorModeValue("gray.900", "whiteAlpha.900");
   const iconColor = useColorModeValue("secondary", "primary");
   return (
-    <Stack
-      h={"40vh"}
-      bg={bgColor}
-      w={"full"}
-      justifyContent={"center"}
-      alignItems={"center"}
-    >
+    <Stack h={"36vh"} bg={bgColor} w={"full"} justifyContent={"center"}>
       <Stack
-        w={{ base: "50%", md: "100%" }}
-        p={8}
+        w={"100%"}
         direction={{ base: "column", md: "row" }}
         justifyContent={"space-evenly"}
+        alignItems={{ base: "none", md: "center" }}
+        p={{base:2, md:0}}
       >
-        <Stack alignItems={"center"} direction={"row"} spacing={4}>
-          <Icon as={AiFillGithub} color={iconColor} />
-          <a href="https://github.com/ServezynskiMarcos" Target="BLANK">
+        <a href="https://github.com/ServezynskiMarcos" Target="BLANK">
+          <Stack
+            alignItems={"center"}
+            direction={"row"}
+            justifyContent={"space-between"}
+          >
             <Text
               color={textColor}
               css={css`
@@ -45,13 +43,17 @@ const Footer = () => {
             >
               GitHub
             </Text>
-          </a>
-        </Stack>
-        <Stack alignItems={"center"} direction={"row"} spacing={4}>
-          <Icon as={AiFillLinkedin} color={iconColor} />
-          <a
-            href="https://www.linkedin.com/in/marcos-servezynski/"
-            Target="BLANK"
+            <Icon as={AiFillGithub} color={iconColor} />
+          </Stack>
+        </a>
+        <a
+          href="https://www.linkedin.com/in/marcos-servezynski/"
+          Target="BLANK"
+        >
+          <Stack
+            alignItems={"center"}
+            direction={"row"}
+            justifyContent={"space-between"}
           >
             <Text
               color={textColor}
@@ -64,43 +66,52 @@ const Footer = () => {
             >
               LinkedIn
             </Text>
-          </a>
-        </Stack>
+            <Icon as={AiFillLinkedin} color={iconColor} />
+          </Stack>
+        </a>
         <Stack display={{ base: "none", md: "flex" }}>
           <Image src={colorMode === "dark" ? logo : logoWhite} w={"140px"} />
         </Stack>
-        <Stack alignItems={"center"} direction={"row"} spacing={4}>
-          <Icon as={AiFillInstagram} color={iconColor} />
-          <a href="https://www.instagram.com/m.servezynski/" Target="BLANK">
+        <a href="https://www.instagram.com/m.servezynski/" Target="BLANK">
+          <Stack
+            alignItems={"center"}
+            direction={"row"}
+            justifyContent={"space-between"}
+          >
             <Text
               color={textColor}
               css={css`
-            &:hover { 
-               color: orange
-              `}
+              &:hover { 
+                color: orange
+                `}
               fontFamily={"primary"}
               fontSize={"xl"}
             >
               Instagram
             </Text>
-          </a>
-        </Stack>
-        <Stack alignItems={"center"} direction={"row"} spacing={4}>
-          <Icon as={IoMdDownload} color={iconColor} />
-          <a href="https://drive.google.com/uc?id=1NvdF4nEV77bi5kEF3_5V7hFxorNvgZlk&export=download">
+            <Icon as={AiFillInstagram} color={iconColor} />
+          </Stack>
+        </a>
+        <a href="https://drive.google.com/uc?id=1NvdF4nEV77bi5kEF3_5V7hFxorNvgZlk&export=download">
+          <Stack
+            alignItems={"center"}
+            direction={"row"}
+            justifyContent={"space-between"}
+          >
             <Text
               color={textColor}
               css={css`
-            &:hover { 
-               color: orange
+              &:hover { 
+                color: orange
               `}
               fontFamily={"primary"}
               fontSize={"xl"}
             >
               CV
             </Text>
-          </a>
-        </Stack>
+            <Icon as={IoMdDownload} color={iconColor} />
+          </Stack>
+        </a>
       </Stack>
     </Stack>
   );
