@@ -14,6 +14,7 @@ import { IoMdDownload } from "react-icons/io";
 const Footer = () => {
   const { colorMode } = useColorMode();
   const bgColor = useColorModeValue("whiteAlpha.900", "gray.700");
+  const textColor = useColorModeValue("gray.900","whiteAlpha.900");
   const iconColor = useColorModeValue("secondary", "primary");
   return (
     <Stack
@@ -32,7 +33,7 @@ const Footer = () => {
         <Stack alignItems={"center"} direction={"row"} spacing={4}>
           <Icon as={AiFillGithub} color={iconColor} />
           <a href="https://github.com/ServezynskiMarcos" Target="BLANK">
-            <Text color={"gray.400"} fontFamily={"primary"} fontSize={"xl"}>
+            <Text color={textColor} fontFamily={"primary"} fontSize={"xl"}>
               GitHub
             </Text>
           </a>
@@ -43,7 +44,7 @@ const Footer = () => {
             href="https://www.linkedin.com/in/marcos-servezynski/"
             Target="BLANK"
           >
-            <Text color={"gray.400"} fontFamily={"primary"} fontSize={"xl"}>
+            <Text color={textColor} fontFamily={"primary"} fontSize={"xl"}>
               LinkedIn
             </Text>
           </a>
@@ -54,7 +55,7 @@ const Footer = () => {
         <Stack alignItems={"center"} direction={"row"} spacing={4}>
           <Icon as={AiFillInstagram} color={iconColor} />
           <a href="https://www.instagram.com/m.servezynski/" Target="BLANK">
-            <Text color={"gray.400"} fontFamily={"primary"} fontSize={"xl"}>
+            <Text color={textColor} fontFamily={"primary"} fontSize={"xl"}>
               Instagram
             </Text>
           </a>
@@ -62,7 +63,7 @@ const Footer = () => {
         <Stack alignItems={"center"} direction={"row"} spacing={4}>
           <Icon as={IoMdDownload} color={iconColor} />
           <a href="https://drive.google.com/uc?id=1NvdF4nEV77bi5kEF3_5V7hFxorNvgZlk&export=download">
-            <Text color={"gray.400"} fontFamily={"primary"} fontSize={"xl"}>
+            <Text color={textColor} fontFamily={"primary"} fontSize={"xl"}>
               CV
             </Text>
           </a>

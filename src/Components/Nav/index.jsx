@@ -9,23 +9,14 @@ import {
 } from "@chakra-ui/react";
 import React from "react";
 import { BsFillCircleFill } from "react-icons/bs";
-import { FaMoon, FaSun } from "react-icons/fa";
 
 const index = () => {
-  const { toggleColorMode, colorMode } = useColorMode();
-
   return (
     <Stack alignItems={"center"} h={"100vh"} justifyContent={"center"}>
-      <Stack>
-        <Icon
-          onClick={toggleColorMode}
-          as={colorMode === "dark" ? FaSun : FaMoon}
-        />
-      </Stack>
       <Stack spacing={0} w={22} alignItems={"center"}>
         <Tooltip label="Intro" placement="right" variant={"solid"}>
           <Button variant={"unstyled"}>
-            <Icon as={BsFillCircleFill} w={3} />
+            <Icon as={BsFillCircleFill} w={2} />
           </Button>
         </Tooltip>
 

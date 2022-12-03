@@ -13,7 +13,7 @@ function Avatar() {
       h={{ base: "auto", lg: "100vh" }}
       alignItems={"center"}
       justifyContent={"space-between"}
-      spacing={{ base: 3, lg: 16 }}
+      spacing={{ base: 6, md: 14, lg: 0, xl: 6 }}
     >
       <Image
         src={colorMode === "dark" ? vector4 : vector6}
@@ -30,7 +30,7 @@ function Avatar() {
         fontFamily={"barra"}
         fontSize={"3xl"}
         w={"full"}
-        textAlign={{ base: "center", lg: "end" }}
+        textAlign={{ base: "center", md: "end" }}
       >
         Front-End developer
       </Text>
