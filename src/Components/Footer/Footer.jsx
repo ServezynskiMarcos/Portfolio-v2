@@ -92,7 +92,7 @@ const Footer = () => {
             <Icon as={AiFillInstagram} color={iconColor} />
           </Stack>
         </a>
-        <a href="https://drive.google.com/uc?id=1T2JoWCFg2dKg8xNodIWMrfAE7220aGoW&export=download">
+        <a href="https://drive.google.com/uc?id=1fp94vhzPD1TF4Gab0JGpJL9OQurqT5ds&export=download">
           <Stack
             alignItems={"center"}
             direction={"row"}
