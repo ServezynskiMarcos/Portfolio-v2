@@ -1,4 +1,4 @@
-import b2b from "./img/b2b.png";
+import qr from "./img/qr.png";
 import portfolio from "./img/portfolio.png";
 import resort from "./img/resort.jpg";
 import jordan from "./img/jordan.png";
@@ -43,10 +43,10 @@ export const SliderDate = [
     repo: "https://github.com/ServezynskiMarcos/portfolio",
   },
   {
-    image: b2b,
-    tittle: "B2B COMMODITIES",
-    description: "(BACKEND CAIDO)",
-    deploy: "https://dev-commodities.vercel.app/",
-    repo: "https://github.com/ServezynskiMarcos/Commodities-Project.git",
+    image: qr,
+    tittle: "QR Transfer",
+    description: "Aplicación que facilita el intercambio de archivos desde un dispositivo a otro, sin estar conectados. Python, Django",
+    deploy: "http://servezynski.pythonanywhere.com/",
+    repo: "https://github.com/ServezynskiMarcos/transfer_archivos",
   },
 ];

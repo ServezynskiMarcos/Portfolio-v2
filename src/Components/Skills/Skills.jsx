@@ -23,6 +23,8 @@ import {
   SiReact,
   SiRedux,
   SiTypescript,
+  SiPython,
+  SiDjango,
 } from "react-icons/si";
 import { WiStars } from "react-icons/wi";
 
@@ -111,6 +113,18 @@ const Skills = () => {
                   <Td>Nodejs</Td>
                   <Td isNumeric>
                     <Icon as={SiNodedotjs} w={4} h={4} color={logoColor} />
+                  </Td>
+                </Tr>
+                <Tr>
+                  <Td>Python</Td>
+                  <Td isNumeric>
+                    <Icon as={SiPython} w={4} h={4} color={logoColor} />
+                  </Td>
+                </Tr>
+                <Tr>
+                  <Td>Django</Td>
+                  <Td isNumeric>
+                    <Icon as={SiDjango} w={4} h={4} color={logoColor} />
                   </Td>
                 </Tr>
                 <Tr>
